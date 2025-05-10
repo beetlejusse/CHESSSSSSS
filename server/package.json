@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -b",
+    "start": "nodemon dist/main.js",
+    "dev": "npm run build && npm run start"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +14,10 @@
   "dependencies": {
     "@types/ws": "^8.18.0",
     "chess.js": "^1.1.0",
-    "typescript": "^5.8.2",
+    "nodemon": "^3.1.9",
     "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
   }
 }
